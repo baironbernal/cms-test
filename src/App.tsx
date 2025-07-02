@@ -1,10 +1,18 @@
-import './App.css'
+
+import Foods from './components/Foods'
+import TasteColours from './components/TasteColours'
 
 function App() {
   
   return (
     <>
-      <h1>CMS Test Started </h1>
+        <main className='bg-[var(--bg-dark)] w-full h-screen'>
+          <section className='container m-auto'>
+            <Foods/>
+            <TasteColours/>
+
+          </section>
+        </main>
     </>
   )
 }
