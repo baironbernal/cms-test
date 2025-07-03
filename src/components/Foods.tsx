@@ -1,58 +1,55 @@
-
-
 const Foods = () => {
   return (
-    <div className="text-[var(--text-light)] font-sans">
-      {/* Top Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-12 py-10">
-        {/* Left Large Image */}
-        <picture>
+    <div className="bg-[#0e1514] text-white font-sans px-6 md:px-16 py-12">
+      <section className="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
+        {/* Left Image (Large pot) */}
+        <div className="col-span-1">
           <img
-            src="/images/pot.jpg"
+            src="/img/1.png"
             alt="Pot"
-            className="w-full h-full object-cover rounded-md"
+            className="w-full h-auto object-contain"
           />
-        </picture>
+        </div>
 
-        {/* Right Column: Two images stacked + text */}
+        {/* Center: Two stacked images */}
         <div className="flex flex-col gap-4 justify-between">
-          {/* Top small image */}
           <img
-            src="/images/chef-hands.jpg"
-            alt="Chef plating"
-            className="w-full h-auto object-cover rounded-md"
+            src="/img/3.png"
+            alt="Chef"
+            className="w-full h-auto  object-contain"
           />
-          {/* Middle small image */}
           <img
-            src="/images/eggs.jpg"
+            src="/img/2.png"
             alt="Egg yolks"
-            className="w-full h-auto object-cover rounded-md"
+            className="w-full h-auto  object-contain"
           />
+        </div>
 
-          {/* Description Text */}
-          <div className="mt-4">
-            <h1 className="text-xl md:text-2xl font-semibold mb-4 uppercase tracking-wide">
-              WHAT DOES COOKING MEAN?
-            </h1>
-            <p className="text-[var(--text-gray)] mb-4 leading-relaxed border-l-4 border-[var(--highlight)] pl-4">
-              Is it simply applying heat to a food product? A way of making certain food safe to eat?
-              Or a way to create flavour and make food more appealing? This is just part of what Hervé This,
-              the father of molecular gastronomy, has dedicated his life to finding out.
-              <br /><br />
-              We spoke to him to find out what his experiments have told him. And in the process,
-              discovered the secret to cooking the perfect egg.
-            </p>
-            <p className="text-sm font-semibold text-[var(--highlight)]">
-              THE PERFECT YOLK:<br />
-              <span className="text-[var(--text-light)]">
-                Keep water between 67 and 68°C for a flavourful, tender yolk
-              </span>
-            </p>
-          </div>
+        {/* Right: Text content */}
+        <div className="flex flex-col justify-start px-4">
+          <h1 className="text-xl md:text-2xl font-light mb-4 uppercase tracking-wide">
+            WHAT DOES COOKING MEAN?
+          </h1>
+          <hr className="border-t border-gray-600 mb-4 w-full" />
+
+          <p className="text-gray-300 leading-relaxed mb-6">
+            Is it simply applying heat to a food product? A way of making
+            certain food safe to eat? Or a way to create flavour and make food
+            more appealing? This is just part of what Hervé This, the father of
+            molecular gastronomy, has dedicated his life to finding out.
+            <br /><br />
+            We spoke to him to find out what his experiments have told him. And
+            in the process even discovered the secret to cooking the perfect egg...
+          </p>
+
+          <p className="text-[#ff4e32] text-sm font-bold uppercase mb-1">
+            The perfect egg
+          </p>
+          <p className="text-white text-sm font-semibold">
+            Keep water between 67 and 68°C <br /> for a flavourful, tender yolk
+          </p>
         </div>
       </section>
-
-     
     </div>
   );
 };
