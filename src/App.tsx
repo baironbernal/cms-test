@@ -28,7 +28,7 @@ function App() {
   
   return (
     <>
-        <main className='bg-[var(--bg-dark)] w-full h-auto'>
+        <main className='w-full h-auto'>
           <section className='3xl:container max-w-fit md:max-w-[1200px] m-auto lg:p-7'>
             <Foods/>
             <TasteColours title="TASTE THE COLOURS" items={tasteColoursData}/>

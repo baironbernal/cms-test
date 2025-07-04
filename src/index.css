@@ -11,3 +11,7 @@
   --highlight: #eb4e4e;
   --font-base: 'Open Sans', sans-serif;
 }
+
+body{
+  background-color: var(--bg-dark);
+}
